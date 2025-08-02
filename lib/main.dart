@@ -6,6 +6,8 @@ import 'package:my_first_flutter_app/L2Functions.dart';
 import 'package:my_first_flutter_app/L3Collections.dart';
 import 'package:my_first_flutter_app/L4ClassAndObject.dart';
 
+import 'L6Exception.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -71,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _counter++;
 
-      L4ClassAndObject();
+      L6Exception();
     });
   }
 
