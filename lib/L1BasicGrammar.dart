@@ -2,7 +2,7 @@
 // L1BasicGrammar.dart
 // my_first_flutter_app
 // 
-// Create by weiguopeng on 2025/8/2.
+// Create by Lynn on 2025/8/2.
 // Copyright © 2025. All rights reserved.
 //
 
