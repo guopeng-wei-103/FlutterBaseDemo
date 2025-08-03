@@ -8,11 +8,11 @@
 
 class L6Exception {
   L6Exception() {
-    devide(2, 0);
-    devide(10, 3);
+    assertTest("Not null");
+    // assertTest(null);
   }
 
-  void devide(int a, int b) {
+  void divide(int a, int b) {
     try {
       var result = a ~/ b; // 整数除法（可能抛异常）
       print('结果: $result');
@@ -23,5 +23,24 @@ class L6Exception {
     } finally {
       print("finally");
     }
+  }
+
+  void assertTest(String? a) {
+    assert(a != null, "不能为空");
+    print(a);
+  }
+
+  void sortList() {
+    List<int> nums = [3, 5, 3, 2, 4, 5];
+    print(nums.toSet());
+  }
+
+  int parseInt(String str) {
+    try {
+      return int.parse(str);
+    } catch (e) {
+      print("ex ${e}");
+      return -1;
+    } finally {}
   }
 }
